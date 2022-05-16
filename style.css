@@ -12,9 +12,9 @@
 }
 
 body{
-    background-image: url(/img/bg-desktop.jpg);
+    background-image: url(/img/bg.jpg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 }
 
 a{
@@ -22,13 +22,16 @@ a{
     color: white;
 }
 
-
+.header{
+    background-color: black;
+    padding: 10px;
+}
 
 .title{
     font-family:shaka-pow;
-    font-size: 40px;
+    font-size: 30px;
     color: ghostwhite;
-    margin: 35px;
+    margin: 10px;
     text-align: center;
     
 }
@@ -169,18 +172,16 @@ footer{
 
 @media screen and (max-width:600px){
 
-    body{
-        background-image: url(/img/bg-mobile.jpg);
-        
-    }
+
 
     .title{
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .card_inicio{
-        margin:auto;
+       
         width: 40%;
+      
     }
 
     .btn{
@@ -202,12 +203,10 @@ footer{
     .pantalla_juego{
        
         width: 80%;
-        padding: 15px;
-
         
     }
     .card_teclas{
-        width: 300px;
+        width: 280px;
     }
 
     .sec-title{
@@ -222,11 +221,8 @@ footer{
 
 }
 
-@media screen and (max-width:1023px){
-    body{
-        background-image: url(/img/bg-mobile.jpg);
-        
-    }
+@media screen and (max-width:768px){
+  
 
     .title{
         margin: 100px;

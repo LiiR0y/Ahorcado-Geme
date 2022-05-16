@@ -145,7 +145,7 @@ function obtener_random( num_min, num_max ){
 
 /*=== EVENTOS ===*/
 iniciarJuego.addEventListener("click", iniciaJuego);
-agregarPalabra.addEventListener("click", validaAgregaPalabra);
+
 
 
 
