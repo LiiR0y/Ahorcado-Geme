@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Marvel Ahorcado</title>
+</head>
+<body>
+    <header class="container">
+        <div class="title"> 
+            <h1>Marvel Ahorcado</h1>
+
+        </div>
+        
+
+
+    </header>
+    <main>
+        <section class="container">
+            <div class="card-inicio" id="inicio">
+                <button class="btn" role="link" onclick="javascript:cerrar();" id="start">Iniciar Juego</button>
+                <hr>
+                <ul class="list">
+                    <li>Solo letras mayusculas</li>
+                    <li>Sin acentos ni caracteres especiales</li>
+                    <li>No alfabeto numerico</li>
+                </ul>
+                <input  class="input" type="text" id="nuevaPalabra" placeholder="Ingrese una palabra">
+                <button class=" btn" id="agregarPalabra">Agregar Nueva Palabra</button>
+            </div>
+
+            <div class="containerCanvas" id="containerCanvas">
+                <canvas class="hidden" id="pantalla" width="960px" height="450px"></canvas>
+                <button class="hidden btn" id="reiniciarJuego" type="reset" onclick="javascript:window.location.reload();">Volver a Jugar</button>
+            </div>
+
+        </section>
+        
+
+
+    </main>
+    <footer>
+        <div class="sec-title">
+            <h1>Marvel <br>Ahorcado</h1>
+            <h2>Coded By <a href="https://github.com/LiiR0y">Loriel Ramirez</a> </h2>
+            <h2>Alura Latam + Oracle Challenge</h2>
+        </div>
+    </footer>
+    <script src="setting.js"></script>
+</body>
+</html>
