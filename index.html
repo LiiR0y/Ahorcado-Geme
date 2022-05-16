@@ -20,7 +20,7 @@
     </header>
     <main>
         <section class="container">
-            <div class="card-inicio" id="inicio">
+            <div class="card_inicio" id="inicio">
                 <button class="btn" role="link" onclick="javascript:cerrar();" id="start">Iniciar Juego</button>
                 <hr>
                 <ul class="list">
@@ -32,11 +32,51 @@
                 <button class=" btn" id="agregarPalabra">Agregar Nueva Palabra</button>
             </div>
 
-            <div class="containerCanvas" id="containerCanvas">
-                <canvas class="hidden" id="pantalla" width="960px" height="450px"></canvas>
-                <button class="hidden btn" id="reiniciarJuego" type="reset" onclick="javascript:window.location.reload();">Volver a Jugar</button>
-            </div>
 
+        </section>
+
+        <section >
+            
+            <div class="pantalla_juego hidden" id="pantalla">
+                <img id="imagen" src="img/img0.png" alt="Ahorcado" />
+                <p id="palabra_a_adivinar">
+                </p>
+                <button class="btn" id="jugar">Generar Palabra</button>
+    
+                <p id="resultado"></p>
+    
+                <div class="card_teclas" id="letras">
+                    <button class="teclas">Q</button>
+                    <button class="teclas">W</button>
+                    <button class="teclas">E</button>
+                    <button class="teclas">R</button>
+                    <button class="teclas">T</button>
+                    <button class="teclas">Y</button>
+                    <button class="teclas">U</button>
+                    <button class="teclas">I</button>
+                    <button class="teclas">O</button>
+                    <button class="teclas">P</button>
+                    <button class="teclas">A</button>
+                    <button class="teclas">S</button>
+                    <button class="teclas">D</button>
+                    <button class="teclas">F</button>
+                    <button class="teclas">G</button>
+                    <button class="teclas">H</button>
+                    <button class="teclas">J</button>
+                    <button class="teclas">K</button>
+                    <button class="teclas">L</button>
+                    <button class="teclas">Ñ</button>
+                    <button class="teclas">Z</button>
+                    <button class="teclas">X</button>
+                    <button class="teclas">C</button>
+                    <button class="teclas">V</button>
+                    <button class="teclas">B</button>
+                    <button class="teclas">N</button>
+                    <button class="teclas">M</button>
+                    
+                </div>
+                <button class="btn"><a href="" id="inicio">Home</a> </button>
+            </div>
         </section>
         
 
