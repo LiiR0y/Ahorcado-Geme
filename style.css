@@ -24,10 +24,7 @@ body{
    padding: 40px;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
+
 
 
 .header{
@@ -80,8 +77,17 @@ main{
    
 }
 
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
 .btn:hover{
     background-color: red;
+}
+
+.btn:active{
+    background-color: transparent;
 }
 
 
@@ -135,6 +141,12 @@ main{
     justify-content: center;
 }
 
+.btn_sec{
+    margin-top: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
 .teclas{
     width: 40px;
     padding: 6px 0;
@@ -144,6 +156,10 @@ main{
     background-color: #F75E25;
     color: white;
     cursor: pointer;
+}
+
+.teclas:active{
+    background-color: transparent;
 }
 
 .pantalla_juego{
@@ -176,18 +192,18 @@ main{
 }
 
 .sec-title h2, a{
-   text-decoration: none;
+    font-family: monospace;
     font-size: 20px;
     margin-top: 20px;
+    
 }
 
-@media (min-width:320px) and (max-width:425px){
+@media (min-width:320px) and (max-width:500px){
 
     .card_inicio{
-        width: 250px;
+        width: 350px;
         height: 400px;
-        position: relative;
-        right: 50px;
+        padding: 50px auto;
         flex-wrap: wrap;
         
         
@@ -195,7 +211,7 @@ main{
 
     .btn{
         padding: 15px;
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .list li{
@@ -203,18 +219,18 @@ main{
     }
 
     .input{
-        font-size: 10px;
-        width: 140px;
+        font-size: 15px;
+        width: 240px;
     }
 
     .pantalla_juego{
-        width: 250px;
-       position: relative;
-       right: 50px;
+        width: 360px;
+        padding:50px auto;
+       
     }
 
     .teclas{
-        width: 20px;
+        width: 30px;
         padding: 10px 0;
     }
 
