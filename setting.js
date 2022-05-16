@@ -96,7 +96,6 @@ function click_letras(event){
         id('resultado').innerHTML = " FELICIDADES, GANASTE!!!!";
         game_over( );
     }
-    console.log( "la letra " + letra + " en la palabra " + palabra + " ¿existe?: " + acerto );
 }
 
 
