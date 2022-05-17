@@ -43,7 +43,7 @@ body{
 }
 
 main{
-    padding: 50px;
+
     background-image: url(/img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -206,14 +206,13 @@ main{
 }
 
 
-@media (min-width:320px) and (max-width:500px){
+@media (min-width:320px) and (max-width:600px){
 
     .card_inicio{
         width: 300px;
         height: 400px;
-        padding: 50px auto;
+        padding: 60px auto;
         flex-wrap: wrap;
-        
         
     }
 
@@ -233,7 +232,7 @@ main{
 
     .pantalla_juego{
         width: 300px;
-        padding:50px auto;
+        padding:60px auto;
        
     }
 
