@@ -9,6 +9,8 @@ const iniciarJuego = document.querySelector("#start");
 const btn = id('jugar');
 const imagen = id( 'imagen' );
 const btn_letras = document.querySelectorAll( "#letras button" );
+const nuevaPalabra = document.querySelector("#nuevaPalabra");
+const agregarPalabra = document.querySelector("#agregarPalabra");
 
 const palabras = [
     'WOLVERINE',    
@@ -22,7 +24,7 @@ const palabras = [
     'DEADPOOL',
     'DAREDEVIL',
     'VISION',
-    'LOKI'     
+    'LOKI',     
 ];
 
 
@@ -89,7 +91,7 @@ function click_letras(event){
         imagen.src = source;
     }
 
-    if( cant_errores == 7 ){
+    if( cant_errores == 5 ){
         id('resultado').innerHTML ="Perdiste, la palabra era " + palabrita;
         game_over( );
     }else if( cant_aciertos == palabrita.length ){
@@ -115,6 +117,28 @@ game_over( );
 
 
 /*===FUCNIONES===*/
+
+/*===AGREGAR PALABRA===*/
+function agregaPalabra(){
+    palabras = [];
+    palabras.push(nuevaPalabra.value)
+    console.log(nuevaPalabra.value);
+    console.log(palabras);
+    nuevaPalabra.value = '';
+}
+
+/*===VALIDAR PALABRA==*/
+function validaAgregaPalabra(){
+    
+    const pattern = new RegExp('^[A-Z]+$');
+
+    if(pattern.test(nuevaPalabra.value)){
+        agregaPalabra();
+    } else{
+        alert("Solo letras mayúsculas, sin espacios sin acentos ni caracteres especiales")
+    }
+}
+
 /*===OCULTAR Y MOSTRAR INICIO===*/
 
 function cerrar(){
